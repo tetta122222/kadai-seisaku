@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.rwdImageMaps.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+  <h1>kagoshima travel hub</h1>
+    <a href="gurunabi_api/test.html">restaurant</a>
+    <input type="button" value="restaurant" onclick="linkReload(0);">
+<input type="button" value="hotel" onclick="linkReload(1);">
+  <img  class="maps"src="鹿児島マップ1.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:100%; height:100%;"/>
+<map name="ImageMap">
+  <area shape="rect" coords="850,723,973,808" href="rakuten_api/index.html" alt="taya左1" class="change_link"/>
+  <area shape="rect" coords="1144,772,1405,984" href="rakuten_api/index.html" alt="taya左2" class="change_link"/>
+  <area shape="rect" coords="1456,597,1498,641" href="rakuten_api/index.html" alt="taya左3" class="change_link"/>
+  <area shape="rect" coords="1604,465,1768,888" href="rakuten_api/index.html" alt="taya左4" class="change_link"/>
+  <area shape="rect" coords="1618,1230,1631,1320" href="rakuten_api/index.html" alt="ama右1"class="change_link" />
+  <area shape="rect" coords="1576,1333,1585,1354" href="rakuten_api/index.html" alt="ama右2"class="change_link" />
+  <area shape="rect" coords="1353,1260,1517,1686" href="rakuten_api/index.html" alt="ama右3" class="change_link"/>
+  <area shape="rect" coords="1149,1705,1295,1876" href="rakuten_api/index.html" alt="ama右4"class="change_link" />
+  <area shape="rect" coords="1023,1933,1152,2001" href="rakuten_api/index.html" alt="ama右5" class="change_link"/>
+  <area shape="rect" coords="2106,227,2715,917" href="rakuten_api/index.html" alt="hokusatsu" class="change_link"/>
+  <area shape="rect" coords="2718,225,3426,920" href="rakuten_api/index.html" alt="airaisa" class="change_link"/>
+  <area shape="poly" coords="2934,925,2934,1001,2753,1001,2755,1211,2937,1213,2945,1823,3435,1823,3424,927,3424,927" href="#" alt="oosumi"class="change_link" />
+  <area shape="rect" coords="2295,925,2713,1372" href="rakuten_api/index.html" alt="kagoshima"class="change_link" />
+  <area shape="rect" coords="2121,1375,2815,1742" href="rakuten_api/index.html" alt="nannsatsu" class="change_link"/>
+  <area shape="rect" coords="2405,1885,2548,1956" href="rakuten_api/index.html" alt="" />
+  <area shape="rect" coords="2821,1943,2997,2026" href="rakuten_api/index.html" alt="" />
+  <area shape="rect" coords="3175,1953,3287,2007" href="rakuten_api/index.html" alt="" />
+</map>
+
+<script>
+    $('img[usemap]').rwdImageMaps();
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楽天API</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  </head>
+<body>
+  <form action="">
+    <div class="word">
+      <div class="search">
+        <input id="search-input"  type="text"  value="">
+        <input id="search-buttom" class="fas" type="button" value="検索" method="get">
+      </div>
+      <div id="google_translate_element"></div>
+    </div>
+    <div class="navis">
+      <div class="navi2">
+        <input value="ジャンル" class="gener" type="button">
+        <div class="cate display_none">
+          <p><input data-value="RSFST01000" value="和食" class="sort" type="button">和食</p>
+          <p><input data-value="RSFST02000" value="日本料理・郷土料理" class="sort" type="button">日本料理・郷土料理</p>
+          <p><input data-value="RSFST03000" value="すし・魚料理・シーフード" class="sort" type="button">すし・魚料理・シーフード</p>
+          <p><input data-value="RSFST04000" value="鍋" class="sort" type="button">鍋</p>
+          <p><input data-value="RSFST05000" value="焼肉・ホルモン" class="sort" type="button">焼肉・ホルモン</p>
+          <p><input data-value="RSFST06000" value="焼き鳥・肉料理・串料理" class="sort" type="button">焼き鳥・肉料理・串料理</p>
+          <p><input data-value="RSFST07000" value="お好み焼き・ホルモン" class="sort" type="button">お好み焼き・ホルモン</p>
+          <p><input data-value="RSFST08000" value="ラーメン・麺料理" class="sort" type="button">ラーメン・麺料理</p>
+          <p><input data-value="RSFST09000" value="居酒屋" class="sort" type="button">居酒屋</p>
+          <p><input data-value="RSFST10000" value="バー・ビアホール" class="sort" type="button">バー・ビアホール</p>
+          <p><input data-value="RSFST11000" value="イタリアン・フレンチ" class="sort" type="button">イタリアン・フレンチ</p>
+          <p><input data-value="RSFST12000" value="欧米・各国料理" class="sort" type="button">欧米・各国料理</p>
+          <p><input data-value="RSFST13000" value="洋食" class="sort" type="button">洋食</p>
+          <p><input data-value="RSFST14000" value="中華" class="sort" type="button">中華</p>
+          <p><input data-value="RSFST15000" value="アジア・エスニック料理" class="sort" type="button">アジア・エスニック料理</p>
+          <p><input data-value="RSFST16000" value="カレー" class="sort" type="button">カレー</p>   
+          <p><input data-value="RSFST17000" value="オーガニック・創作料理" class="sort" type="button">オーガニック・創作料理</p>
+          <p><input data-value="RSFST18000" value="カフェ・スイーツ" class="sort" type="button">カフェ・スイーツ</p>
+          <p><input data-value="RSFST19000" value="宴会・カラオケ・エンターテインメント" class="sort" type="button">宴会・カラオケ・エンターテインメント</p>
+          <p><input data-value="RSFST20000" value="ファミレス・ファストフード" class="sort" type="button">ファミレス・ファストフード</p>
+          <p><input data-value="RSFST21000" value="お酒" class="sort" type="button">お酒</p>
+          <p><input data-value="RSFST90000" value="その他" class="sort" type="button">その他</p>
+        </div>
+        
+      </div>
+      <div class="navi3">
+        <input value="エリア" class="area" type="button">
+        <div class="cate2 display_none">
+          <p><input data-value="AREAL5400" value="鹿児島" class="area1" type="button">鹿児島</p>
+          <p><input data-value="AREAL5404" value="いちき串木野・日置" class="area1" type="button">いちき串木野・日置</p>
+          <p><input data-value="AREAL5405" value="枕崎・南さつま・指宿" class="area1" type="button">枕崎・南さつま・指宿</p>
+          <p><input data-value="AREAL5406" value="霧島・薩摩川内・姶良" class="area1" type="button">霧島・薩摩川内・姶良</p>
+          <p><input data-value="AREAL5407" value="阿久根・出水・伊佐" class="area1" type="button">阿久根・出水・伊佐</p>
+          <p><input data-value="AREAL5408" value="志布志・曽於・大崎" class="area1" type="button">志布志・曽於・大崎</p>
+          <p><input data-value="AREAL5401" value="鹿屋・垂水・肝付" class="area1" type="button">鹿屋・垂水・肝付</p>
+          <p><input data-value="AREAL5402" value="種子島・屋久島" class="area1" type="button">種子島・屋久島</p>
+          <p><input data-value="AREAL5403" value="奄美大島・徳之島・与論" class="area1" type="button">奄美大島・徳之島・与論</p>
+        </div>
+      </div>
+      
+    </div>
+  </form>
+
+  
+
+
+  <div id="list"></div>
+  <div class="pageing">
+    <button id = "back_page" >＜</button>
+    <div id ="page_nam"></div>
+    <button id = "next_page" >＞</button>
+  </div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+   <script src="../js/str_save2.js"></script>
+   <script src="../js/js2.js"></script>
+   <script src="../js/translation.js"></script> 
+   
+</body>
+</html>

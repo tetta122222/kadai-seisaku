@@ -1,0 +1,313 @@
+body {
+  background-color: #e7b2a5ff;
+  top: 0px !important;
+}
+
+/*各施設*/
+.hotel_box {
+  background: linear-gradient(315deg, transparent 20px, white 20px);
+  background-position: bottom left, top left, top right, bottom right;
+  background-repeat: no-repeat;
+  ul {
+    padding: 0;
+    width: 50vw;
+    line-height: 2.5rem;
+    li {
+      list-style-type: none;
+    }
+
+    /*施設名*/
+    :nth-child(1) {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .search{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // background: white;
+  margin: 2rem 2rem;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: auto;
+  /*施設画像*/
+  img {
+    height: 18rem;
+    width: 18rem;
+  }
+  /*レビュー☆*/
+  .image {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /*最安料金～詳細情報URL*/
+  .hotel_child {
+    p {
+      margin: 0;
+      margin-bottom: 7rem;
+    }
+    a {
+      text-decoration: none;
+      color: #a59d9c;
+      padding: 0.5rem 1.5rem;
+      border: solid 1px #a59d9c;
+    }
+  }
+}
+
+.header {
+  background: white;
+  margin: 0;
+  height: 100%;
+
+  a {
+    font-size: 200%;
+    text-decoration: none;
+  }
+}
+.display {
+  display: block;
+}
+.display_none {
+  display: none;
+}
+
+#next_page,
+#back_page {
+  background: none;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+#next_page,
+#back_page:focus {
+  outline: 0;
+}
+.pageing {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.page:hover {
+  color: red;
+}
+//------------------------------------------
+//------------------------------------------
+//------------------------------------------
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.navi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navis{
+  display: flex;  
+}
+
+.navi2 {
+  position: relative;
+  width: 18vw;
+  top: 0;
+  bottom: 0;
+
+  .gener {
+    width: 100%;
+  }
+  p {
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  p:hover {
+    color: blue;
+  }
+  .display_none {
+    display: none;
+  }
+  .cate {
+    width: 100%;
+    position: absolute;
+    background: white;
+    .sort {
+      width: 100%;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: transparent;
+      color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.navi3 {
+  position: relative;
+  width: 18vw;
+  top: 0;
+  bottom: 0;
+
+  .area {
+    width: 100%;
+  }
+  p {
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  p:hover {
+    color: blue;
+  }
+  .display_none {
+    display: none;
+  }
+  .gener2{
+    width: 100%;
+  }
+  .cate2 {
+    width: 100%;
+    position: absolute;
+    background: white;
+    .area1 {
+      width: 100%;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: transparent;
+      color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+    .sort2{
+      width: 100%;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: transparent;
+      color: transparent;
+      border: none;
+      outline: none;
+  }
+}
+
+.skiptranslate{
+  iframe{
+    display:none ;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #e7b2a5ff;
+    width: 100%;
+  }
+  .word{
+    display: flex;
+    justify-content: space-between;
+  }
+ .navi{
+   display: block;
+ }
+ .search{
+  display: flex;
+}
+.navis{
+  div{
+    width: 50%;
+  }
+}
+  form{
+    display: block;
+
+
+
+  }
+  #list {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+
+    /* Safari etc. */
+    -ms-flex-wrap: wrap;
+
+    /* IE10        */
+    flex-wrap: wrap;
+
+    /* grid-template-columns: fit-content(300px) fit-content(300px) 1fr;
+     grid-gap: 5px;*/
+  }
+
+  .hotel_box {
+    display: block;
+    width: 100%;
+    height: 550px;
+
+    ul {
+      position: relative;
+      font-size: small;
+      width: auto;
+      margin: 4%;
+
+      :nth-child(1) {
+        word-wrap: break-word;
+        font-size: 0.9rem;
+        line-height: normal;
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      li {
+        line-height: normal;
+        width: 100%;
+        list-style: none;
+      }
+    }
+
+    img {
+      width: 98%;
+      height: 40%;
+      margin: 1%;
+    }
+
+    .hotel_child {
+      a {
+        text-decoration: none;
+        color: #A59D9C;
+        padding: 0.5rem 1.5rem;
+        border: solid 1px #A59D9C;
+        position: relative;
+        margin: 4%;
+      }
+
+      p {
+        margin-bottom: 10%;
+        margin: 4%;
+      }
+    }
+  }
+}
