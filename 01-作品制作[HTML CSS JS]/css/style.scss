@@ -263,6 +263,7 @@ form {
   }
 
   .hotel_box {
+    position: relative;
     display: block;
     width: 100%;
     height: 550px;
@@ -295,7 +296,11 @@ form {
     }
 
     .hotel_child {
+      position: absolute;
+      bottom: 5%;
+      width: 100%;
       a {
+        width: 100%;
         text-decoration: none;
         color: #A59D9C;
         padding: 0.5rem 1.5rem;
