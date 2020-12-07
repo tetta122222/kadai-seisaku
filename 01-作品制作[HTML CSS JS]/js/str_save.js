@@ -16,7 +16,6 @@ $('.sort').on('click', function(){
   $('.cate').addClass('display_none');
   $('.page1').addClass('display_none');
   $('.cate2').addClass('display_none');
-  $('.sort2').addClass('display_none'); 
   count = 0;
   count1 = 0;
   getHotels();
@@ -30,7 +29,6 @@ $('.sort2').on('click', function(){
   $('.cate').addClass('display_none');
   $('.page1').addClass('display_none');
   $('.cate2').addClass('display_none'); 
-  $('.sort2').addClass('display_none'); 
   count = 0;
   count1 = 0;
   getHotels();  
@@ -121,6 +119,7 @@ $('.gener2').on('click', function(){
   if(count1 === 0 ){
       count1 = 1;
       $('.cate2').removeClass('display_none');
+
           }
  else{
      count1 = 0;
