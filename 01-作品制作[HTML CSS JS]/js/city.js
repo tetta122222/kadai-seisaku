@@ -4,6 +4,7 @@ function myFunction() {
     filter = input.value.toUpperCase();
     ul = document.getElementById("myUL");
     li = ul.getElementsByTagName("li");
+    
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         txtValue = a.textContent || a.innerText;
@@ -79,13 +80,28 @@ function filterContent() {
 
 
  function linkReload(value){
-  var search = $(".search"); 
   if(value == 1){
     $(".search").attr('href','rakuten_api/index.html');
-    console.log("aa");
   }
   else{
     $(".search").attr('href','gurunabi_api/test.html');
   }
  }
+
+ let qwawsef;
+ let qwawsef1;
+ 
+
+$('.option').on('click', function(value){
+  qwawsef = $(this).children('input').val();
+  qwawsef1 = $(this).children('input').attr('data-value');
+  sessionStorage.setItem('value', qwawsef);
+  sessionStorage.setItem('value1', qwawsef1);
+  console.log(qwawsef);
+  console.log(qwawsef1);
+})
+
+ 
+ console.log(qwawsef);
+ console.log(qwawsef1);
 

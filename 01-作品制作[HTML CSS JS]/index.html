@@ -22,12 +22,15 @@
   <div class="container"> 
     <div class="select-box">
       <div class="options-container">
+        
         <div class="option">
           <input
             type="radio"
             class="radio"
             id="鹿児島"
             name="category"
+            value="kagoshima"
+            data-value="AREAL5400"
           />
          <label for="鹿児島">鹿児島</label> 
         </div>
@@ -37,17 +40,10 @@
            class="radio"
             id="鹿屋" 
             name="category"
+            value="kanoya"
+            data-value="AREAL5401"
            />
           <label for="鹿屋">鹿屋</label>
-        </div>
-
-        <div class="option">
-          <input type="radio"
-           class="radio"
-            id="指宿" 
-            name="category"
-          />
-          <label for="指宿">指宿</label>
         </div>
 
         <div class="option">
@@ -55,6 +51,8 @@
           class="radio" 
           id="霧島" 
           name="category"
+          value="oosumi"
+          data-value="AREAL5406"
          />
           <label for="霧島">霧島</label>
         </div>
@@ -62,19 +60,23 @@
         <div class="option">
           <input type="radio"
            class="radio" 
-           id="日置" 
+           id="さつま" 
            name="category" 
+           value="nansatsu"
+           data-value="AREAL5405"
           />
-          <label for="日置">日置</label>
+          <label for="さつま">さつま</label>
         </div>
 
         <div class="option">
           <input type="radio"
            class="radio" 
-           id="さつま" 
+           id="日置" 
            name="category" 
+           value="nansatsu"
+           data-value="AREAL5404"
           />
-          <label for="さつま">さつま</label>
+          <label for="日置">日置</label>
         </div>
 
         <div class="option">
@@ -82,6 +84,8 @@
           class="radio" 
           id="姶良"
           name="category" 
+          value="oosumi"
+          data-value="AREAL5406"
           />
           <label for="姶良">姶良</label>
         </div>
@@ -91,6 +95,8 @@
            class="radio" 
            id="泉" 
            name="category" 
+           value="hokusatsu"
+           data-value="AREAL5407"
           />
           <label for="泉">出水</label>
         </div>
@@ -100,8 +106,50 @@
           class="radio" 
           id="志布志" 
           name="category" 
+          value="kanoya"
+          data-value="AREAL5408"
         />
           <label for="志布志">志布志</label>
+        </div>
+        <div class="option">
+          <input type="radio" 
+          class="radio" 
+          id="奄美" 
+          name="category" 
+          value="amami"
+          data-value="AREAL5403"
+        />
+          <label for="奄美">奄美大島・徳之島</label>
+        </div>
+        <div class="option">
+          <input type="radio" 
+          class="radio" 
+          id="種子島" 
+          name="category" 
+          value="ritou"
+          data-value="AREAL5402"
+        />
+          <label for="種子島">種子島</label>
+        </div>
+        <div class="option">
+          <input type="radio" 
+          class="radio" 
+          id="屋久島" 
+          name="category" 
+          value="yakushima"
+          data-value="AREAL5402"
+        />
+          <label for="屋久島">屋久島</label>
+        </div>
+        <div class="option">
+          <input type="radio" 
+          class="radio" 
+          id="沖永良部島・与論島" 
+          name="category" 
+          value="okinoerabu"
+          data-value="AREAL5403"
+        />
+          <label for="沖永良部島・与論島">沖永良部島・与論島</label>
         </div>
       </div>
 
@@ -114,7 +162,7 @@
     </div>
   </div>
 <a href="#" class="search">検索</a>
-<!-- </div> 
+</div> 
   <div class="map_view">
     <img  class="maps"src="img/鹿児島マップ.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:60vw; "/>
     <map name="ImageMap">
@@ -137,20 +185,14 @@
       <area shape="rect" coords="3175,1953,3287,2007" href="rakuten_api/index.html" alt="" />
     </map>
   </div>     
-  -->
   
-  <script>
+  
+   <script> 
       $('img[usemap]').rwdImageMaps();
-  </script>
-
-          
-
-        
-        ​​
-      </body>
-    </html>
-        
-    <script src="js/city.js"></script>
+  </script> ​
+  <script src="js/city.js"></script>
+  <!-- <script src="js/value.js"></script> -->
+  </body>
     
-</body>
+    
 </html>

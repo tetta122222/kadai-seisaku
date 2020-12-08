@@ -15,7 +15,7 @@ let j;
 let count = 0;
 let count1 = 0;
 let category_l = "RSFST01000";
-let areacodeL = "AREAL5400";
+let areacodeL = sessionStorage.getItem('value1');
 
 function food(){
     console.log( i );

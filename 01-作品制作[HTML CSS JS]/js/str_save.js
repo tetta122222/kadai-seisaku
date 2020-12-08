@@ -7,7 +7,7 @@ let pageCount ;
 var sort_num ="standard";
 let count = 0;
 let count1= 0;
-let small_cd = 'kagoshima';
+let small_cd = sessionStorage.getItem('value');
 var keyword = "";
 
 $('.sort').on('click', function(){
@@ -191,7 +191,6 @@ function aaaaa(){
 
   });  
 }
-
 
 
  
