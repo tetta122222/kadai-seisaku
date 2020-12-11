@@ -12,179 +12,182 @@
   <script src="js/jquery.rwdImageMaps.js"></script>
   <title>Document</title>
 </head>
-<body>      
-<div class=selecter>
-  <div class="catagory">
-    <p>施設選択</p>
-    <p><input type="radio" name ="category" value="1" onclick="linkReload(0);" class="cate">飲食店</p>
-    <p><input type="radio" name ="category" value="2" onclick="linkReload(1);" class="cate2">宿泊施設</p>
-  </div>
-  <div class="container"> 
-    <div class="select-box">
-      <div class="options-container">
-        
-        <div class="option">
-          <input
-            type="radio"
-            class="radio"
-            id="鹿児島"
+<body>
+<div class="abc">
+  <div class=selecter>
+    <div class="catagory">
+      <p>施設選択</p>
+      <p><input type="radio" name ="category" value="1" onclick="linkReload(0);" class="cate">飲食店</p>
+      <p><input type="radio" name ="category" value="2" onclick="linkReload(1);" class="cate2">宿泊施設</p>
+    </div>
+    <div class="container"> 
+      <div class="select-box">
+        <div class="options-container">
+          
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="鹿児島"
+              name="category"
+              value="kagoshima"
+              data-value="AREAL5400"
+            />
+           <label for="鹿児島">鹿児島</label> 
+          </div>
+  
+          <div class="option">
+            <input type="radio"
+             class="radio"
+              id="鹿屋" 
+              name="category"
+              value="kanoya"
+              data-value="AREAL5401"
+             />
+            <label for="鹿屋">鹿屋</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="霧島" 
             name="category"
-            value="kagoshima"
-            data-value="AREAL5400"
-          />
-         <label for="鹿児島">鹿児島</label> 
-        </div>
-
-        <div class="option">
-          <input type="radio"
-           class="radio"
-            id="鹿屋" 
-            name="category"
-            value="kanoya"
-            data-value="AREAL5401"
+            value="oosumi"
+            data-value="AREAL5406"
            />
-          <label for="鹿屋">鹿屋</label>
-        </div>
-
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="霧島" 
-          name="category"
-          value="oosumi"
-          data-value="AREAL5406"
-         />
-          <label for="霧島">霧島</label>
-        </div>
-
-        <div class="option">
-          <input type="radio"
-           class="radio" 
-           id="さつま" 
-           name="category" 
-           value="nansatsu"
-           data-value="AREAL5405"
+            <label for="霧島">霧島</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio"
+             class="radio" 
+             id="さつま" 
+             name="category" 
+             value="nansatsu"
+             data-value="AREAL5405"
+            />
+            <label for="さつま">さつま</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio"
+             class="radio" 
+             id="日置" 
+             name="category" 
+             value="nansatsu"
+             data-value="AREAL5404"
+            />
+            <label for="日置">日置</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="姶良"
+            name="category" 
+            value="oosumi"
+            data-value="AREAL5406"
+            />
+            <label for="姶良">姶良</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio"
+             class="radio" 
+             id="泉" 
+             name="category" 
+             value="hokusatsu"
+             data-value="AREAL5407"
+            />
+            <label for="泉">出水</label>
+          </div>
+  
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="志布志" 
+            name="category" 
+            value="kanoya"
+            data-value="AREAL5408"
           />
-          <label for="さつま">さつま</label>
-        </div>
-
-        <div class="option">
-          <input type="radio"
-           class="radio" 
-           id="日置" 
-           name="category" 
-           value="nansatsu"
-           data-value="AREAL5404"
+            <label for="志布志">志布志</label>
+          </div>
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="奄美" 
+            name="category" 
+            value="amami"
+            data-value="AREAL5403"
           />
-          <label for="日置">日置</label>
-        </div>
-
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="姶良"
-          name="category" 
-          value="oosumi"
-          data-value="AREAL5406"
+            <label for="奄美">奄美大島・徳之島</label>
+          </div>
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="種子島" 
+            name="category" 
+            value="ritou"
+            data-value="AREAL5402"
           />
-          <label for="姶良">姶良</label>
-        </div>
-
-        <div class="option">
-          <input type="radio"
-           class="radio" 
-           id="泉" 
-           name="category" 
-           value="hokusatsu"
-           data-value="AREAL5407"
+            <label for="種子島">種子島</label>
+          </div>
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="屋久島" 
+            name="category" 
+            value="yakushima"
+            data-value="AREAL5402"
           />
-          <label for="泉">出水</label>
+            <label for="屋久島">屋久島</label>
+          </div>
+          <div class="option">
+            <input type="radio" 
+            class="radio" 
+            id="沖永良部島・与論島" 
+            name="category" 
+            value="okinoerabu"
+            data-value="AREAL5403"
+          />
+            <label for="沖永良部島・与論島">沖永良部島・与論島</label>
+          </div>
         </div>
-
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="志布志" 
-          name="category" 
-          value="kanoya"
-          data-value="AREAL5408"
-        />
-          <label for="志布志">志布志</label>
+  
+        <div class="selected">
+           所在地選択
         </div>
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="奄美" 
-          name="category" 
-          value="amami"
-          data-value="AREAL5403"
-        />
-          <label for="奄美">奄美大島・徳之島</label>
+        <div class="search-box">
+            <input type="text" placeholder="Start Typing..." />
         </div>
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="種子島" 
-          name="category" 
-          value="ritou"
-          data-value="AREAL5402"
-        />
-          <label for="種子島">種子島</label>
-        </div>
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="屋久島" 
-          name="category" 
-          value="yakushima"
-          data-value="AREAL5402"
-        />
-          <label for="屋久島">屋久島</label>
-        </div>
-        <div class="option">
-          <input type="radio" 
-          class="radio" 
-          id="沖永良部島・与論島" 
-          name="category" 
-          value="okinoerabu"
-          data-value="AREAL5403"
-        />
-          <label for="沖永良部島・与論島">沖永良部島・与論島</label>
-        </div>
-      </div>
-
-      <div class="selected">
-         所在地選択
-      </div>
-      <div class="search-box">
-          <input type="text" placeholder="Start Typing..." />
       </div>
     </div>
-  </div>
-<a href="#" class="search">検索</a>
-</div> 
-  <div class="map_view">
-    <img  class="maps"src="img/鹿児島マップ.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:60vw; "/>
-    <map name="ImageMap">
-      <area shape="rect" coords="850,723,973,808" href="rakuten_api/index.html" alt="taya左1" class="change_link"/>
-      <area shape="rect" coords="1144,772,1405,984" href="rakuten_api/index.html" alt="taya左2" class="change_link"/>
-      <area shape="rect" coords="1456,597,1498,641" href="rakuten_api/index.html" alt="taya左3" class="change_link"/>
-      <area shape="rect" coords="1604,465,1768,888" href="rakuten_api/index.html" alt="taya左4" class="change_link"/>
-      <area shape="rect" coords="1618,1230,1631,1320" href="rakuten_api/index.html" alt="ama右1"class="change_link" />
-      <area shape="rect" coords="1576,1333,1585,1354" href="rakuten_api/index.html" alt="ama右2"class="change_link" />
-      <area shape="rect" coords="1353,1260,1517,1686" href="rakuten_api/index.html" alt="ama右3" class="change_link"/>
-      <area shape="rect" coords="1149,1705,1295,1876" href="rakuten_api/index.html" alt="ama右4"class="change_link" />
-      <area shape="rect" coords="1023,1933,1152,2001" href="rakuten_api/index.html" alt="ama右5" class="change_link"/>
-      <area shape="rect" coords="2106,227,2715,917" href="rakuten_api/index.html" alt="hokusatsu" class="change_link"/>
-      <area shape="rect" coords="2718,225,3426,920" href="rakuten_api/index.html" alt="airaisa" class="change_link"/>
-      <area shape="poly" coords="2934,925,2934,1001,2753,1001,2755,1211,2937,1213,2945,1823,3435,1823,3424,927,3424,927" href="#" alt="oosumi"class="change_link" />
-      <area shape="rect" coords="2295,925,2713,1372" href="rakuten_api/index.html" alt="kagoshima"class="change_link" />
-      <area shape="rect" coords="2121,1375,2815,1742" href="rakuten_api/index.html" alt="nannsatsu" class="change_link"/>
-      <area shape="rect" coords="2405,1885,2548,1956" href="rakuten_api/index.html" alt="" />
-      <area shape="rect" coords="2821,1943,2997,2026" href="rakuten_api/index.html" alt="" />
-      <area shape="rect" coords="3175,1953,3287,2007" href="rakuten_api/index.html" alt="" />
-    </map>
-  </div>     
+  <a href="#" class="search">検索</a>
+  </div> 
+    <div class="map_view">
+      <img  class="maps"src="img/鹿児島マップ.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:60vw; "/>
+      <map name="ImageMap">
+        <area shape="rect" coords="850,723,973,808" href="rakuten_api/index.html" alt="taya左1" class="change_link"/>
+        <area shape="rect" coords="1144,772,1405,984" href="rakuten_api/index.html" alt="taya左2" class="change_link"/>
+        <area shape="rect" coords="1456,597,1498,641" href="rakuten_api/index.html" alt="taya左3" class="change_link"/>
+        <area shape="rect" coords="1604,465,1768,888" href="rakuten_api/index.html" alt="taya左4" class="change_link"/>
+        <area shape="rect" coords="1618,1230,1631,1320" href="rakuten_api/index.html" alt="ama右1"class="change_link" />
+        <area shape="rect" coords="1576,1333,1585,1354" href="rakuten_api/index.html" alt="ama右2"class="change_link" />
+        <area shape="rect" coords="1353,1260,1517,1686" href="rakuten_api/index.html" alt="ama右3" class="change_link"/>
+        <area shape="rect" coords="1149,1705,1295,1876" href="rakuten_api/index.html" alt="ama右4"class="change_link" />
+        <area shape="rect" coords="1023,1933,1152,2001" href="rakuten_api/index.html" alt="ama右5" class="change_link"/>
+        <area shape="rect" coords="2106,227,2715,917" href="rakuten_api/index.html" alt="hokusatsu" class="change_link"/>
+        <area shape="rect" coords="2718,225,3426,920" href="rakuten_api/index.html" alt="airaisa" class="change_link"/>
+        <area shape="poly" coords="2934,925,2934,1001,2753,1001,2755,1211,2937,1213,2945,1823,3435,1823,3424,927,3424,927" href="#" alt="oosumi"class="change_link" />
+        <area shape="rect" coords="2295,925,2713,1372" href="rakuten_api/index.html" alt="kagoshima"class="change_link" />
+        <area shape="rect" coords="2121,1375,2815,1742" href="rakuten_api/index.html" alt="nannsatsu" class="change_link"/>
+        <area shape="rect" coords="2405,1885,2548,1956" href="rakuten_api/index.html" alt="" />
+        <area shape="rect" coords="2821,1943,2997,2026" href="rakuten_api/index.html" alt="" />
+        <area shape="rect" coords="3175,1953,3287,2007" href="rakuten_api/index.html" alt="" />
+      </map>
+    </div>
+</div>        
+     
   
   
    <script> 

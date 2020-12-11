@@ -1,4 +1,12 @@
 body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7b2a5ff;
+}
+
+.abc{
+  width: 100vw;
   height: 100vh;
   display: flex;
   /*-----------------*/
@@ -230,6 +238,30 @@ h1
 }
 
 @media screen  and  (max-width:768px) {
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+}
+
+.map_view{
+width: 90%;
+}
+
+.maps{
+  width: 100% !important;
+}
+
+.abc{
+  height: auto;
+  display: block;
+}
+.selecter{
+  width: auto;
+}
+  
 .selected {
   border-radius: 2px;
   margin-bottom: 4px;
