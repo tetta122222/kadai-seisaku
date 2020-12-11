@@ -8,17 +8,18 @@
   <script type="text/javascript"src="js/jquery-3.5.1.js"></script>
   <link rel="stylesheet" type="text/css" href="css/select.css">
   <link rel="stylesheet" type="text/css" href="css/home.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common_color.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.rwdImageMaps.js"></script>
   <title>Document</title>
 </head>
-<body>
-<div class="abc">
+<body class="backgorund">
+<div class="abc backgorund">
   <div class=selecter>
     <div class="catagory">
       <p>施設選択</p>
-      <p><input type="radio" name ="category" value="1" onclick="linkReload(0);" class="cate">飲食店</p>
-      <p><input type="radio" name ="category" value="2" onclick="linkReload(1);" class="cate2">宿泊施設</p>
+      <p><input type="radio" name ="category" value="1" onclick="linkReload(0);" class="cate" id="cate"><label for="cate">飲食店</label></p>
+      <p><input type="radio" name ="category" value="2" onclick="linkReload(1);" class="cate2" id="cate2"><label for="cate2">宿泊施設</p>
     </div>
     <div class="container"> 
       <div class="select-box">
@@ -162,7 +163,7 @@
         </div>
       </div>
     </div>
-  <a href="#" class="search">検索</a>
+  <a href="#" class="search">検索<img src="img/search.png" alt=""></a>
   </div> 
   <div class="map_view">
     <img  class="maps"src="img/鹿児島マップ.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:60vw; "/>

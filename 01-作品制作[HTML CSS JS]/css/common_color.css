@@ -1,0 +1,25 @@
+.backgorund{
+    background: #fef6e4;
+}
+
+/* タイトル */
+.headline{
+    color: #001858;
+}
+
+/* 段落*/
+.ParaGraph{
+    color: #172c66;
+}
+
+button{
+    background: #f582ae;
+}
+
+.main{
+    background: #f3d2c1;
+}
+
+.secondary{
+    color: #8bd3dd;
+}
