@@ -250,22 +250,25 @@ body{
 .map_view{
 width: 80%;
 margin: 0 auto;
-
+order: 1;
 }
-
+.selecter{
+  width: auto;
+  order: 2;
+  width: 100%;
+}
 .maps{
   height: 100%;
   width: 100% !important;
 }
 
 .abc{
+  
   height: auto;
-  display: block;
+  flex-direction: column;
   height: 90%;
 }
-.selecter{
-  width: auto;
-}
+
 .container{
 margin-top: 50px;
 } 
