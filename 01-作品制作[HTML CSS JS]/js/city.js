@@ -101,6 +101,8 @@ $('.option').on('click', function(value){
   console.log(qwawsef1);
 })
 
+
+$("body").css('height',$(window).height());
  
  console.log(qwawsef);
  console.log(qwawsef1);
