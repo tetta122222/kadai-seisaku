@@ -7,6 +7,7 @@ body{
 
 
 .abc{
+  font-size: 3vh;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -33,9 +34,9 @@ h1
 }
 
 .selecter{
- width: 20vw;
+ width: 40vw;
  margin: 5%;
- text-align: center;
+ text-align:left;
 }
 .catagory{
   margin: 0 auto;
@@ -109,33 +110,40 @@ h1
       }
       
       .selected {
-    
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
         border-radius: 8px;
         margin-bottom: 8px;
         position: relative;
-      
+        background: white;
         order: 0;
       }
+      .selected > img{
+        width: 3vh;
+        height: 3vh;
+      }
       
-      .selected::after {
+      /* .selected::after {
         content: "";
         background: url("../img/image.png");
         background-size:contain;
         background-repeat: no-repeat;
       
-        /* position: absolute; */
+        position: absolute;
         height: 100%;
         width: 32px;
         right: 10px;
         top: 4px;
       
         transition: all 0.4s;
-      }
+      } */
       
       .select-box .options-container.active {
         max-height: 100%;
         opacity: 1;
         overflow-y: scroll;
+        background: #001858;
       }
       
       .select-box .options-container.active + .selected::after {
@@ -145,13 +153,13 @@ h1
       
       .select-box .options-container::-webkit-scrollbar {
         width: 8px;
-       
+       background: #172c66;
         border-radius: 0 8px 8px 0;
       }
       
       .select-box .options-container::-webkit-scrollbar-thumb {
-
-        border-radius: 0 8px 8px 0;
+        background: white;
+        border-radius: 0.2vh ;
       }
       
       .select-box .option,
@@ -164,6 +172,7 @@ h1
       
       .select-box label {
         cursor: pointer;
+        color: white;
       }
       
       .select-box .option .radio {
@@ -181,7 +190,6 @@ h1
         /* position: absolute; */
         border-radius: 8px 8px 0 0;
         z-index: 100;
-        border: 8px solid #2f3640;
         box-sizing: border-box;
         opacity: 0;
         pointer-events: none;
@@ -259,6 +267,7 @@ margin: 0 auto;
 order: 1;
 }
 .selecter{
+  text-align: left;
   width: auto;
   order: 2;
   width: 100%;
@@ -269,10 +278,10 @@ order: 1;
 }
 
 .abc{
-  
+  font-size: 3vh;
   height: auto;
   flex-direction: column;
-  height: 90%;
+  height: 99%;
 }
 
 .container{
@@ -280,11 +289,15 @@ margin-top: 50px;
 } 
 
 .selected {
+  color: #001858;
   border-radius: 2px;
   margin-bottom: 4px;
   position: relative;
 }
 .catagory{
   border-radius: 2px;
+}
+.option{
+  font-size: 16px;
 }
 }
