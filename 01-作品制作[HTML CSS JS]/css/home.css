@@ -53,7 +53,6 @@ h1
 }
 .catagory{
   margin: 0 auto;
-  border-radius: 8px;
   width:80%;
 
   
@@ -126,7 +125,6 @@ h1
         display: flex;
         justify-content: space-between;
         align-items:center;
-        border-radius: 8px;
         margin-bottom: 8px;
         position: relative;
         background: white;
@@ -212,6 +210,10 @@ h1
     outline: none;
   }
   
+  .select_gener{
+    background: white;
+  }
+
   .select-box .options-container.active ~ .search-box input {
     opacity: 1;
     pointer-events: auto;
