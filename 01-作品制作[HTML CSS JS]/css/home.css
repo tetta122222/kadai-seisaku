@@ -29,9 +29,22 @@ h1
     top: 10%;
     left: 55%;
 }
-#ul{
-   flex-display: none;
+
+.cate,.cate2 {
+  display: none;
 }
+.cate + .check:before, .cate2 + .check2:before  {
+  content: "\f3a6";
+  font-family: "Ionicons";
+  color: #ccc;
+  font-size: 22px;
+}
+.cate:checked + .check:before, .cate2:checked + .check2:before {
+  content: "\f3a7";
+  color: #001858;
+}
+
+
 
 .selecter{
  width: 40vw;
