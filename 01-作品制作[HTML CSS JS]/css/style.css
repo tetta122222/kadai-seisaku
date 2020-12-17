@@ -229,10 +229,6 @@ form {
   outline: none;
 }
 
-.skiptranslate iframe {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   body {
     background-color: #e7b2a5ff;

@@ -1,0 +1,31 @@
+body{
+      top: 0 !important;
+      min-height: auto;
+      margin: 0;
+      background-color: red;
+}
+.header{
+      height: 10vh;
+      margin: 1vh 1vh;
+      padding: 0 4vw; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      border-radius: 5vh;
+     
+}
+.skiptranslate iframe{
+      display:none ;
+}
+
+.goog-te-gadget-simple{
+ border: none;
+ background-color: #001858;
+ padding: 8px 0;
+ border-radius: 8px;
+}
+
+.goog-te-menu-value > span {
+      color: white;
+}
