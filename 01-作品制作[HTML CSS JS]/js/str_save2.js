@@ -12,6 +12,7 @@ let page;
 let paeg2;
 let i = 0;
 let j;
+let k;
 let count = 0;
 let count1 = 0;
 let category_l = "RSFST01000";
@@ -40,6 +41,7 @@ function  getfood() {
         total_hit_count = e.target.response.total_hit_count;
         j = i + 10;
         console.log( i,j );
+        k = i;
         for(  i; i < j; i++ ){
             let shop_image = array[i].image_url.shop_image1;
             console.log(shop_image);
@@ -57,8 +59,6 @@ function  getfood() {
             htmlList.innerHTML += textcontent;
 
         };
-        i = 0
-        j = 0
 
         back_page.toggleClass('display_none');
         
@@ -89,7 +89,21 @@ function button(){
         food();
         getfood();
     })
+    pagination();
 }
+
+function pagination(){
+    var cnt = $(".page1").length;
+    if(cnt > 7){
+     $(".page1").slice(7,cnt).addClass('display_none');
+     if(i > 40){
+        $(".page1").addClass('display_none');
+        $(".page1").slice(i/10-4,i/10+3).removeClass("display_none");
+    }
+    }
+}
+
+
 //-----------------------------------------
 //ジャンルボタンクリック
 //-----------------------------------------

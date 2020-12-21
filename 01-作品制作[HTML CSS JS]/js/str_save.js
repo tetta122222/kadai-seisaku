@@ -9,7 +9,7 @@ let count = 0;
 let count1= 0;
 let small_cd = sessionStorage.getItem('value');
 var keyword = "";
-
+let k;
 $('.sort').on('click', function(){
   $('.hotel_box').remove();
   sort_num = $(this).attr('data-value');
@@ -89,8 +89,9 @@ function  getHotels(pageValue){
       sessionStorage.setItem("gdsjajo",hotels[i].hotel[0].hotelBasicInfo.hotelName);
       /*変数の中身を初期化*/
       contents  = "";
+
     }
-    
+
   });
   
 };
@@ -188,14 +189,26 @@ function aaaaa(){
         next_page.removeClass('display_none');
       });
     }
-
+    pagination();
   });  
+  pagination();
 }
 
+function pagination(){
+  console.log("aa");
+   let cnt = $(".page1").length;
+   if(cnt > 7){
+    $(".page1").slice(7,cnt).addClass('display_none');
+    let index2 = $('page1').index(this) + 1;
+    console.log(index2);
+    if(index2 > 5){
+      console.log(index2);
+       $(".page1").removeClass('display_none');
+   }
+   }
+}
 
  
-
-
 
 
 
