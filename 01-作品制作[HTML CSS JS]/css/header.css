@@ -3,6 +3,7 @@ body{
       min-height: auto;
       margin: 0;
       background-color: red;
+      overflow-y: hidden;
 }
 
 #header{

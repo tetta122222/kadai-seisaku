@@ -1,4 +1,7 @@
 
+body{
+  overflow:hidden;
+}
 
 .abc{
   font-size: 3vh;
