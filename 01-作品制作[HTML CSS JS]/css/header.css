@@ -6,18 +6,19 @@ body{
 }
 
 #header{
-      position: relative;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
       display: flex;
       justify-content: center;
       align-items: center;
 }
 
 .header{
-      position: absolute;
-      top: 0;
       width: 70vw;
       height: 10vh;
-      margin: 1vh 1vh;
+      margin: 1vw auto;
       padding: 0 4vw; 
       display: flex;
       justify-content: space-between;
