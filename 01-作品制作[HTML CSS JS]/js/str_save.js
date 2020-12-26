@@ -189,24 +189,26 @@ function aaaaa(){
         next_page.removeClass('display_none');
       });
     }
-    pagination();
+    // pagination();
   });  
-  pagination();
+  // pagination();
 }
-
-function pagination(){
-  console.log("aa");
-   let cnt = $(".page1").length;
-   if(cnt > 7){
-    $(".page1").slice(7,cnt).addClass('display_none');
-    let index2 = $('page1').index(this) + 1;
-    console.log(index2);
-    if(index2 > 5){
-      console.log(index2);
-       $(".page1").removeClass('display_none');
-   }
-   }
-}
+// let index2;
+// function pagination(){
+//    let cnt = $(".page1").length;
+//    if(cnt > 7){
+//     $(".page1").slice(7,cnt).addClass('display_none');
+//     index2 = cnt;
+//     console.log(index2);
+//    }
+//    $(".page1").on('click', function(){
+//     if(index2 > 5){
+//       console.log(index2);
+//        $(".page1").addClass('display_none');
+//        $(".page1").slice(index2-4,index2+3).removeClass("display_none");
+//     }
+//    });
+// }
 
  
 
