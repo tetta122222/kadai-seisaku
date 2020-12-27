@@ -73,6 +73,8 @@ function  getfood() {
     setTimeout("button()", 2000);
 }
 
+var index;
+
 function button(){
     page =  Math.floor(total_hit_count/10 + 1);
     page2 = Math.floor(total_hit_count/10);
@@ -84,17 +86,21 @@ function button(){
         contents = "";
     }
     $(".page1").on('click', function(){
-        var index = $('button.page1').index(this);
+        index = $('button.page1').index(this);
         i = index * 10;
         food();
         getfood();
+        a();
     })
     pagination();
 }
 
+
+
 function pagination(){
+    $(".page1").eq(index).css('background','#f582ae');
     var cnt = $(".page1").length;
-    if(cnt > 7){
+    if(cnt > 7){   
      $(".page1").slice(7,cnt).addClass('display_none');
      if(i > 40){
         $(".page1").addClass('display_none');
@@ -102,7 +108,7 @@ function pagination(){
     }
     }
 }
-
+    
 
 //-----------------------------------------
 //ジャンルボタンクリック

@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>楽天API</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/common_color.css"/>
+  <script src="js/translation.js"></script>
+  <link rel="stylesheet" href="../css/common_color.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  </head>
-<body>
-  <div id = "header">
-    <script>
-      $("#header").load("../header.html");
-      console.log("aaa");
-      </script>
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <body class="backgorund">
+  <div id = "header ">
+    <div class="header stroke">
+        <div class="logo">ロゴ入る</div>
+        <div id="google_translate_element"></div>
+    </div>
   </div>
   <form action="">
     <div class="word">
@@ -22,9 +24,9 @@
       </div>
       <div id="google_translate_element"></div>
     </div>
-    <div class="navis">
-      <div class="navi2">
-        <input value="ジャンル" class="gener" type="button">
+    <div class="navis ">
+      <div class="navi2 ">
+        <input value="ジャンル" class="ParaGraph gener button_animation1 button " type="button">
         <div class="cate display_none">
           <p><input data-value="RSFST01000" value="和食" class="sort" type="button">和食</p>
           <p><input data-value="RSFST02000" value="日本料理・郷土料理" class="sort" type="button">日本料理・郷土料理</p>
@@ -52,7 +54,7 @@
         
       </div>
       <div class="navi3">
-        <input value="エリア" class="area" type="button">
+        <input value="エリア" class="area button_animation1 button ParaGraph" type="button">
         <div class="cate2 display_none">
           <p><input data-value="AREAL5400" value="鹿児島" class="area1" type="button">鹿児島</p>
           <p><input data-value="AREAL5404" value="いちき串木野・日置" class="area1" type="button">いちき串木野・日置</p>
@@ -74,15 +76,16 @@
 
   <div id="list"></div>
   <div class="pageing">
-    <button id = "back_page" >＜</button>
+    <!-- <button id = "back_page" >＜</button> -->
     <div id ="page_nam"></div>
-    <button id = "next_page" >＞</button>
+    <!-- <button id = "next_page" >＞</button> -->
   </div>
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
     }
   </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

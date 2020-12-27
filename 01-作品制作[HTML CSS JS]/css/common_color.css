@@ -32,6 +32,10 @@
     font-weight: bold;
 }
 
+.button2{
+    background: #f582ae;
+}
+
 .main{
     background: #f3d2c1;
 }
@@ -46,4 +50,8 @@
 
 .card-paragraph{
     color: #172c66;
+}
+
+.shadow1{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
 }

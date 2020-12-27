@@ -178,6 +178,8 @@ function aaaaa(){
   $(".page1").on('click', function(){ 
     clicknum = 2;
     var index = $('button.page1').index(this) + 1;
+    $('button.page1').css('background','white');
+    $(this).css('background','#f582ae');
     clicknum = index;
     getHotels(clicknum);
     console.log(index);

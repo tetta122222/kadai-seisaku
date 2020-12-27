@@ -24,9 +24,17 @@ body {
     .search{
       display: flex;
       justify-content: center;
+      height: 40px;
     }
+
   }
 
+  #search-input{
+    height: 100%;
+  }
+  #search-buttom{
+    height: 100%;
+  }
   // background: white;
   margin: 2rem 2rem;
   justify-content: space-around;
@@ -59,16 +67,16 @@ body {
   }
 }
 
-.header {
-  background: white;
-  margin: 0;
-  height: 100%;
+// .header {
+//   background: white;
+//   margin: 0;
+//   height: 100%;
 
-  a {
-    font-size: 200%;
-    text-decoration: none;
-  }
-}
+//   a {
+//     font-size: 200%;
+//     text-decoration: none;
+//   }
+// }
 .display {
   display: block;
 }
@@ -92,18 +100,41 @@ body {
   justify-content: center;
 }
 
+#page_nam{
+  padding: 1rem;
+  margin: 2rem 0;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+ border-radius: 10px;
+}
+
 .page {
   color: white;
   margin: 0 0.5rem;
 }
 
+.page1{
+  color: #172c66;
+  outline: none;
+  box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+  background-color: white;
+  padding: 0.5rem;
+  width: 5vh;
+  border: none;
+  margin: 0 0.2vh;
+  border-radius: 2px;
+}
+
+
+
 .page:hover {
   color: red;
+  border: none;
 }
 //------------------------------------------
 //------------------------------------------
 //------------------------------------------
 form {
+  margin: 0 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -111,6 +142,7 @@ form {
 
 
 .navi {
+  margin: 0 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -310,4 +342,40 @@ form {
       }
     }
   }
+}
+
+#header{
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  width: 85vw;
+  height: 10vh;
+  margin: 1vw auto;
+  padding: 0 4vw; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5vh;
+
+}
+.skiptranslate iframe{
+  display:none ;
+}
+
+.goog-te-gadget-simple{
+border: none;
+background-color: #001858 !important;
+padding: 8px 0 !important;
+border-radius: 8px;
+}
+
+.goog-te-menu-value > span {
+  color: white;
 }
