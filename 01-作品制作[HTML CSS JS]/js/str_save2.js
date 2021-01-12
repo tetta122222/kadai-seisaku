@@ -96,10 +96,11 @@ function button(){
 }
 
 
+var cnt;
 
 function pagination(){
     $(".page1").eq(index).css('background','#f582ae');
-    var cnt = $(".page1").length;
+    cnt = $(".page1").length;
     if(cnt > 7){   
      $(".page1").slice(7,cnt).addClass('display_none');
      if(i > 40){
@@ -140,6 +141,7 @@ $('.area').on('click', function(){
 //ジャンル切り替え
 //-------------
 $('.sort').on('click', function(){
+    cnt = 0;
     $('.hotel_box').remove();
     category_l = $(this).attr('data-value');
     let category_l_2 = $(this).val();
@@ -155,6 +157,7 @@ $('.sort').on('click', function(){
 //場所切り替え
 //---------------
 $('.area1').on('click', function(){
+    cnt = 0;
     $('.hotel_box').remove();
     areacodeL = $(this).attr('data-value');
     let category_l_2 = $(this).val();
