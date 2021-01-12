@@ -23,14 +23,15 @@ $('.sort').on('click', function(){
 })
 
 $('.sort2').on('click', function(){
+  //clicknum = 1;
   $('.hotel_box').remove();
   small_cd = $(this).attr('data-value');
   console.log(small_cd);
   $('.cate').addClass('display_none');
   $('.page1').addClass('display_none');
   $('.cate2').addClass('display_none'); 
-  count = 0;
-  count1 = 0;
+  // count = 0;
+  // count1 = 0;
   getHotels();  
   setTimeout("aaaaa()", 2000);  
 
@@ -176,8 +177,9 @@ function aaaaa(){
   
   //ページングの番号を押したとき
   $(".page1").on('click', function(){ 
+    index = 0
     clicknum = 2;
-    var index = $('button.page1').index(this) + 1;
+    var index = $('button.page1').not('.display_none').index(this) + 1;
     $('button.page1').css('background','white');
     $(this).css('background','#f582ae');
     clicknum = index;
@@ -185,6 +187,7 @@ function aaaaa(){
     console.log(index);
     $('.hotel_box').remove();
     let max_page = Math.floor( pageCount / 10 + 1 );
+    console.log("aaaaaaaaa");
     if(clicknum === max_page){
       next_page.toggleClass('display_none');
       $('#back_page').click(function() {

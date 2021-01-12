@@ -22,7 +22,9 @@ function food(){
     console.log( i );
     $('.page1').remove();
     $('.hotel_box').remove();
-    let name = $("#search-input").val();
+    let name =  $("#search-input").val();
+    let name2 = String(name);
+    console.log(name2);
     //let hit_per_page = 100;
     ajax.open("get", "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=5aca6cc18a0f24786df3e9e16531427e&pref=PREF46&hit_per_page=100&id&areacode_l="+ areacodeL + "&category_l="+ category_l + "&name=" + name   );
     ajax.responseType = 'json';
@@ -96,11 +98,10 @@ function button(){
 }
 
 
-var cnt;
 
 function pagination(){
     $(".page1").eq(index).css('background','#f582ae');
-    cnt = $(".page1").length;
+    var cnt = $(".page1").length;
     if(cnt > 7){   
      $(".page1").slice(7,cnt).addClass('display_none');
      if(i > 40){
@@ -141,7 +142,8 @@ $('.area').on('click', function(){
 //ジャンル切り替え
 //-------------
 $('.sort').on('click', function(){
-    cnt = 0;
+    index = 0;
+    i = index * 10;
     $('.hotel_box').remove();
     category_l = $(this).attr('data-value');
     let category_l_2 = $(this).val();
@@ -157,7 +159,8 @@ $('.sort').on('click', function(){
 //場所切り替え
 //---------------
 $('.area1').on('click', function(){
-    cnt = 0;
+    index = 0;
+    i = index * 10;
     $('.hotel_box').remove();
     areacodeL = $(this).attr('data-value');
     let category_l_2 = $(this).val();
