@@ -202,11 +202,12 @@ var startPos = 1000,winScrollTop = 0;
 $(window).on('scroll',function(){
   
     winScrollTop = $(this).scrollTop();
-    if (winScrollTop <= 2000) {
-        $('.navi').addClass('hide');
-    }
-    else if(winScrollTop >= 2000) {
+    if(winScrollTop >= 2000) {
         $('.navi').removeClass('hide');
+    }
+
+    if(winScrollTop <= 2000){
+      $('.navi').toggleClass('hide');
     }
     startPos = winScrollTop;
 });
