@@ -210,7 +210,8 @@ $(window).on('scroll',function(){
       $('.navi').toggleClass('hide');
     }
     startPos = winScrollTop;
-});
+    $('.navi').toggleClass('hide');
+  });
 
  
 
