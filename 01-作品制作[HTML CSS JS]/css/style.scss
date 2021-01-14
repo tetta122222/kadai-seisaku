@@ -358,6 +358,9 @@ form {
       }
     }
   }
+  .hide{
+    transform: translateY(-100%);
+  }
 }
 
 #header{
@@ -394,7 +397,4 @@ border-radius: 8px;
 
 .goog-te-menu-value > span {
   color: white;
-}
-.hide{
-  transform: translateY(-100%);
 }

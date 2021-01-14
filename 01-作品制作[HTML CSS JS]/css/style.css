@@ -343,6 +343,9 @@ form {
     margin-bottom: 10%;
     margin-left: 4%;
   }
+  .hide {
+    transform: translateY(-100%);
+  }
 }
 
 #header {
@@ -379,8 +382,4 @@ form {
 
 .goog-te-menu-value > span {
   color: white;
-}
-
-.hide {
-  transform: translateY(-100%);
 }
