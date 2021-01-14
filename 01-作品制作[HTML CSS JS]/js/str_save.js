@@ -211,6 +211,10 @@ $(window).on('scroll',function(){
     startPos = winScrollTop;
 });
 
+$("body").on('click', function(){
+  $('.navi').removeClass('hide2');
+});
+
 $("#search-input").on('click', function(){
   $('.navi').addClass('hide2');
 }); 
