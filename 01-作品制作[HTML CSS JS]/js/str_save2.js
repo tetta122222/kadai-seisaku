@@ -16,16 +16,24 @@ let k;
 let count = 0;
 let count1 = 0;
 let category_l = "RSFST01000";
-let areacodeL = sessionStorage.getItem('value1');
+var areacodeL = sessionStorage.getItem('value1');
+let name = "";
+
+$('#search-buttom').on('click', function(){
+    name =  $("#search-input").val();
+    food();
+    getfood();
+});
+
 
 function food(){
     console.log( i );
     $('.page1').remove();
     $('.hotel_box').remove();
-    let name =  $("#search-input").val();
-    let name2 = String(name);
-    console.log(name2);
     //let hit_per_page = 100;
+    console.log(name);
+    console.log(areacodeL);
+    console.log(category_l);
     ajax.open("get", "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=5aca6cc18a0f24786df3e9e16531427e&pref=PREF46&hit_per_page=100&id&areacode_l="+ areacodeL + "&category_l="+ category_l + "&name=" + name   );
     ajax.responseType = 'json';
     ajax.send(null);
@@ -180,8 +188,4 @@ $('.area1').on('click', function(){
 food();
 getfood();
 
-$('#search-buttom').on('click', function(){
-    food();
-    getfood();
-});
 
