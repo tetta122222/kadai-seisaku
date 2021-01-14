@@ -206,14 +206,13 @@ $(window).on('scroll',function(){
         $('.navi').addClass('hide');
     }
     else {
+      $('.navi').removeClass('hide2');
         $('.navi').removeClass('hide');
     }
     startPos = winScrollTop;
 });
 
-$(".list").on('click', function(){
-  $('.navi').removeClass('hide2');
-});
+
 
 $("#search-input").on('click', function(){
   $('.navi').addClass('hide2');
