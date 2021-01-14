@@ -193,9 +193,10 @@ getfood();
 var startPos = 0,winScrollTop = 0;
 $(window).on('scroll',function(){
     winScrollTop = $(this).scrollTop();
-    if (winScrollTop <= 100) {
+    if (winScrollTop <= 50) {
         $('.form').addClass('hide');
-    } else {
+    } 
+    else {
         $('.form').removeClass('hide');
     }
     startPos = winScrollTop;
