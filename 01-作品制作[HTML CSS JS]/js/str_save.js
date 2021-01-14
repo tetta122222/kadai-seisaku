@@ -212,7 +212,7 @@ $(window).on('scroll',function(){
 });
 
 $("#search-input").on('click', function(){
-  $('.navi').removeClass('hide');
+  $('.navi').addClass('hide2');
 }); 
 
 
