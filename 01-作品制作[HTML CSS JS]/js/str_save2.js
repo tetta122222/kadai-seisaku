@@ -20,6 +20,8 @@ var areacodeL = sessionStorage.getItem('value1');
 let name = "";
 
 $('#search-buttom').on('click', function(){
+    index = 0;
+    i = index * 10;
     name =  $("#search-input").val();
     food();
     getfood();
