@@ -198,14 +198,13 @@ function aaaaa(){
   });  
   // pagination();
 }
-var startPos = 0,winScrollTop = 0;
+var startPos = 1000,winScrollTop = 0;
 $(window).on('scroll',function(){
+  
     winScrollTop = $(this).scrollTop();
-    if (winScrollTop <= startPos) {
+    console.log(winScrollTop);
+    if (winScrollTop <= 1000) {
         $('.navi').addClass('hide');
-    }
-    else if (winScrollTop === 0) {
-      $('.navi').addClass('hide');
     }
     else {
         $('.navi').removeClass('hide');
