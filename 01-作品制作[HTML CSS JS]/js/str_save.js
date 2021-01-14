@@ -202,7 +202,6 @@ var startPos = 1000,winScrollTop = 0;
 $(window).on('scroll',function(){
   
     winScrollTop = $(this).scrollTop();
-    console.log(winScrollTop);
     if (winScrollTop <= 1000) {
         $('.navi').addClass('hide');
     }
