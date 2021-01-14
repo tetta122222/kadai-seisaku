@@ -198,22 +198,16 @@ function aaaaa(){
   });  
   // pagination();
 }
-// let index2;
-// function pagination(){
-//    let cnt = $(".page1").length;
-//    if(cnt > 7){
-//     $(".page1").slice(7,cnt).addClass('display_none');
-//     index2 = cnt;
-//     console.log(index2);
-//    }
-//    $(".page1").on('click', function(){
-//     if(index2 > 5){
-//       console.log(index2);
-//        $(".page1").addClass('display_none');
-//        $(".page1").slice(index2-4,index2+3).removeClass("display_none");
-//     }
-//    });
-// }
+var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop <= startPos) {
+        $('.navi').addClass('hide');
+    } else {
+        $('.navi').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
 
  
 

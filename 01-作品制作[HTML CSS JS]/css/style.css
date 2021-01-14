@@ -10,14 +10,9 @@ body {
   background-position: bottom left, top left, top right, bottom right;
   background-repeat: no-repeat;
   margin: 2rem 2rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-around;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: auto;
   /*施設画像*/
   /*レビュー☆*/
@@ -41,12 +36,8 @@ body {
 }
 
 .hotel_box ul .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 40px;
 }
 
@@ -102,19 +93,14 @@ body {
 }
 
 .pageing {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #page_nam {
   padding: 1rem;
   margin: 2rem 0;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 
@@ -126,8 +112,7 @@ body {
 .page1 {
   color: #172c66;
   outline: none;
-  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.5);
   background-color: white;
   padding: 0.5rem;
   width: 5vh;
@@ -143,27 +128,17 @@ body {
 
 form {
   margin: 0 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .navi {
   margin: 0 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .navis {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -280,19 +255,21 @@ form {
     width: 100%;
   }
   .word {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .navi {
     display: block;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
   }
   .search {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .navis div {
@@ -300,11 +277,18 @@ form {
   }
   form {
     display: block;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
   }
   #list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
     /* Safari etc. */
     -ms-flex-wrap: wrap;
     /* IE10        */
@@ -365,15 +349,9 @@ form {
   top: 0;
   right: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -381,15 +359,9 @@ form {
   height: 10vh;
   margin: 1vw auto;
   padding: 0 4vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
   border-radius: 5vh;
 }
@@ -408,4 +380,7 @@ form {
 .goog-te-menu-value > span {
   color: white;
 }
-/*# sourceMappingURL=style.css.map */
+
+.hide {
+  transform: translateY(-100%);
+}

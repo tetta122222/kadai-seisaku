@@ -190,4 +190,13 @@ $('.area1').on('click', function(){
 food();
 getfood();
 
-
+var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    if (winScrollTop <= startPos) {
+        $('.form').addClass('hide');
+    } else {
+        $('.form').removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
