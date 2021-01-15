@@ -205,4 +205,9 @@ $(window).on('scroll',function(){
 $("#search-input").on('click', function(){
     $('.navi').addClass('hide2');
   }); 
+
   
+  $("#google_translate_element").on('click', function(){
+    console.log("aaaaaa");
+    $("iframe").addClass('width');
+});

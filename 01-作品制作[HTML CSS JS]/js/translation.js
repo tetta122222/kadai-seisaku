@@ -1,3 +1,4 @@
+
 (function(){var gtConstEvalStartTime = new Date();/*
 
     Copyright The Closure Library Authors.
@@ -44,7 +45,7 @@
         
         var c=_setupNS('google.translate._const');
         c._cest = gtConstEvalStartTime;gtConstEvalStartTime = undefined;
-        c._cl='ja';
+        c._cl='eng';
         c._cuc='googleTranslateElementInit';
         c._cac='';c._cam='';
         c._ctkk='444219.2982488430';
@@ -65,7 +66,10 @@
      
         });
     })
-
+    
     ();
 
 })();
+
+
+

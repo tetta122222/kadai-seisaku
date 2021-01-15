@@ -250,6 +250,10 @@ form {
 
 
 @media screen and (max-width: 768px) {
+  .width{
+    width: 85% !important;
+    background-color: red !important;
+  }
   body {
     background-color: #e7b2a5ff;
     width: 100%;
