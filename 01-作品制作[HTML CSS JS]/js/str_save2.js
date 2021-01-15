@@ -201,3 +201,8 @@ $(window).on('scroll',function(){
     }
     startPos = winScrollTop;
 });
+
+$("#search-input").on('click', function(){
+    $('.navi').addClass('hide2');
+  }); 
+  
