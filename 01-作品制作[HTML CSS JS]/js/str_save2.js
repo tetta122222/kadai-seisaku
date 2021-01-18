@@ -93,7 +93,7 @@ function button(){
     let contents = "";
     
     for(let kkk = 1; kkk < page; kkk++){
-        contents += '<button  class="page1" value="' +kkk+' "> ' +kkk+'</button>';
+        contents += '<button  class="page1 notranslate" translate: no; value="' +kkk+' "> ' +kkk+'</button>';
         $('#page_nam').append(contents);
         contents = "";
     }
@@ -217,3 +217,4 @@ $("#search-input").on('click', function(){
 $("iframe").on("load",function(){
     console.log("こんにちは");
    });
+   

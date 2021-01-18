@@ -170,7 +170,7 @@ function aaaaa(){
   
   // ページ数
   for(var i = 1; i < page; i++){
-    contents1 += '<button  class = "page1" value = "' +i+' "> ' +i+'</button>';
+    contents1 += '<button  class = "page1 notranslate" translate: no; value = "' +i+' "> ' +i+'</button>';
     $('#page_nam').append(contents1);
     contents1  = "";
   }
