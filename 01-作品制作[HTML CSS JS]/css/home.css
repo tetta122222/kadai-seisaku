@@ -11,12 +11,12 @@ header{
   font-size: 3vh;
   width: 100%;
   height: 100vh;
-  display: flex;
-  /*-----------------*/
+  /* display: flex;
+  
   justify-content: center;
-  /*-----------------*/
+  
   align-items: center;
- 
+  */
   overflow: hidden;
 }
 h1
@@ -51,6 +51,7 @@ h1
  width: 40vw;
  margin-top: 0;
  text-align:left;
+ margin: 0 auto;
 }
 .catagory{
   margin: 0 auto;
@@ -287,6 +288,7 @@ order: 1;
   width: auto;
   order: 2;
   width: 100%;
+  margin-top:60px ;
 }
 .maps{
   height: 100%;
@@ -318,7 +320,7 @@ margin-top: 20px;
 }
 
  #header{
-  position: absolute;
+ 
   top: 0;
   right: 0;
   left: 0;
