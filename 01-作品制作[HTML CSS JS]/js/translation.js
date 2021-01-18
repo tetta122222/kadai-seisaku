@@ -71,5 +71,7 @@
 
 })();
 
+$("table").css({'display':'none'});
+
 
 

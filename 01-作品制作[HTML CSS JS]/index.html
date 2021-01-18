@@ -7,23 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="css/select.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css"/>
   <link rel="stylesheet" type="text/css" href="css/common_color.css"/>
+  <link rel="stylesheet" type="text/css" href="css/home.css"/>
   <script type="text/javascript"src="js/jquery-3.5.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.rwdImageMaps.js"></script>
   <title>Document</title>
 </head>
 <body class="backgorund">
-  <div class="selecter">
-    <div id = "header">
-      <script>
-        $("#header").load("../header.html");
-        console.log("aaa");
-        </script>
-    </div>
-  <div >
+
 <div class="abc backgorund ">
+  <div id = "header">
+    <div class="header stroke">
+        <div class="logo">ロゴ入る</div>
+        <div id="google_translate_element"></div>
+    </div>
+  </div>
   <div class="selecter">
   <div >
     <div class="catagory">
@@ -181,34 +180,17 @@
   </div>
   <a href="#" class="search button button-text">検索</a>
   </div> 
-  <!-- <div class="map_view">
-    <img  class="maps"src="img/鹿児島マップ.png" usemap="#ImageMap" alt="鹿児島マップ" style="width:60vw; "/>
-    <map name="ImageMap">
-      <area shape="rect" coords="850,723,973,808" href="rakuten_api/index.html" alt="taya左1" class="change_link"/>
-      <area shape="rect" coords="1144,772,1405,984" href="rakuten_api/index.html" alt="taya左2" class="change_link"/>
-      <area shape="rect" coords="1456,597,1498,641" href="rakuten_api/index.html" alt="taya左3" class="change_link"/>
-      <area shape="rect" coords="1604,465,1768,888" href="rakuten_api/index.html" alt="taya左4" class="change_link"/>
-      <area shape="rect" coords="1618,1230,1631,1320" href="rakuten_api/index.html" alt="ama右1"class="change_link" />
-      <area shape="rect" coords="1576,1333,1585,1354" href="rakuten_api/index.html" alt="ama右2"class="change_link" />
-      <area shape="rect" coords="1353,1260,1517,1686" href="rakuten_api/index.html" alt="ama右3" class="change_link"/>
-      <area shape="rect" coords="1149,1705,1295,1876" href="rakuten_api/index.html" alt="ama右4"class="change_link" />
-      <area shape="rect" coords="1023,1933,1152,2001" href="rakuten_api/index.html" alt="ama右5" class="change_link"/>
-      <area shape="rect" coords="2106,227,2715,917" href="rakuten_api/index.html" alt="hokusatsu" class="change_link"/>
-      <area shape="rect" coords="2718,225,3426,920" href="rakuten_api/index.html" alt="airaisa" class="change_link"/>
-      <area shape="poly" coords="2934,925,2934,1001,2753,1001,2755,1211,2937,1213,2945,1823,3435,1823,3424,927,3424,927" href="#" alt="oosumi"class="change_link" />
-      <area shape="rect" coords="2295,925,2713,1372" href="rakuten_api/index.html" alt="kagoshima"class="change_link" />
-      <area shape="rect" coords="2121,1375,2815,1742" href="rakuten_api/index.html" alt="nannsatsu" class="change_link"/>
-      <area shape="rect" coords="2405,1885,2548,1956" href="rakuten_api/index.html" alt="" />
-      <area shape="rect" coords="2821,1943,2997,2026" href="rakuten_api/index.html" alt="" />
-      <area shape="rect" coords="3175,1953,3287,2007" href="rakuten_api/index.html" alt="" />
-    </map>
-  </div>  -->
+
 </div>    
    
-  <script>
-      $('img[usemap]').rwdImageMaps();
-  </script> ​
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   <script src="js/city.js"></script>
+  <script src="js/translation.js"></script>
   <!-- <script src="js/value.js"></script> -->
   </body>
     

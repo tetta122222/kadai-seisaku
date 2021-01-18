@@ -216,7 +216,9 @@ $(window).on('scroll',function(){
 
 $("#search-input").on('click', function(){
   $('.navi').addClass('hide2');
+  
 }); 
+
 
 
 

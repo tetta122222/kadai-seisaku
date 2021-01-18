@@ -1,6 +1,6 @@
 body{
       top: 0 !important;
-      min-height: auto;
+     
       margin: 0;
       background-color: red;
       overflow-y: hidden;
@@ -19,7 +19,7 @@ body{
 .header{
       width: 85vw;
       height: 10vh;
-      margin: 1vw auto;
+      margin: 1vw 4.9vw;
       padding: 0 4vw; 
       display: flex;
       justify-content: space-between;

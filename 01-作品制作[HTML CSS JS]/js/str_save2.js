@@ -210,4 +210,10 @@ $("#search-input").on('click', function(){
   $("#google_translate_element").on('click', function(){
     console.log("aaaaaa");
     $("iframe").addClass('width');
+    $('td').addClass('none');
 });
+
+
+$("iframe").on("load",function(){
+    console.log("こんにちは");
+   });
