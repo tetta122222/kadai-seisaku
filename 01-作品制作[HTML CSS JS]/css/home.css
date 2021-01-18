@@ -1,11 +1,37 @@
 
 body{
   overflow:hidden;
+  top: 0 !important;
 }
 
+ #goog-gt-tt{
+  display: none !important;
+  visibility: hidden !important;
+}
+#goog-gt-tt:hover{
+  display: none !important;
+  visibility: hidden !important;
+}
 header{
   font-size: 16px;
 }
+
+.goog-tooltip:hover{
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+.goog-text-highlight{
+  background: none !important;
+  box-shadow: none !important;
+
+}
+
+.goog-text-highlight:hover{
+  background: none !important;
+  box-shadow: none !important;
+}
+
 
 .abc{
   font-size: 3vh;

@@ -406,3 +406,32 @@ border-radius: 8px;
 .goog-te-menu-value > span {
   color: white;
 }
+
+#goog-gt-tt{
+  display: none !important;
+  visibility: hidden !important;
+}
+#goog-gt-tt:hover{
+  display: none !important;
+  visibility: hidden !important;
+}
+header{
+  font-size: 16px;
+}
+
+.goog-tooltip:hover{
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+.goog-text-highlight{
+  background: none !important;
+  box-shadow: none !important;
+
+}
+
+.goog-text-highlight:hover{
+  background: none !important;
+  box-shadow: none !important;
+}
+
