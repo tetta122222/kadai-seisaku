@@ -61,7 +61,7 @@ function  getfood() {
                 shop_image = "../img/no_image.png";
             }
             textcontent =
-            '<div class="hotel_box">'+ '<img src ="' + shop_image + ' " >'+  
+            '<div class="hotel_box shadow1">'+ '<img src ="' + shop_image + ' " >'+  
             '<ul><li>' + array[i].name + '</li>' + 
             '<li>' + array[i].name_kana + '</li>' + 
             '<li>' + array[i].address + '</li>' + 
@@ -207,13 +207,13 @@ $("#search-input").on('click', function(){
   }); 
 
   
-  $("#google_translate_element").on('click', function(){
-    $("text").text("変更後の文章");
-    console.log("こんにちは");
-});
+//   $("#google_translate_element").on('click', function(){
+//     $("text").text("変更後の文章");
+//     console.log("こんにちは");
+// });
 
 
-$("iframe").on("load",function(){
-    console.log("こんにちは");
-   });
+// $("iframe").on("load",function(){
+//     console.log("こんにちは");
+//    });
    
