@@ -206,6 +206,13 @@ $("#search-input").on('click', function(){
     $('.navi').addClass('hide2');
   }); 
 
+  
+  $("#google_translate_element").on('click', function(){
+    $("text").text("変更後の文章");
+    console.log("こんにちは");
+});
+
+
 $("iframe").on("load",function(){
     console.log("こんにちは");
    });

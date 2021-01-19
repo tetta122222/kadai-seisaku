@@ -1,6 +1,6 @@
 
 body{
-  overflow:hidden;
+  overflow:scroll;
   top: 0 !important;
 }
 
@@ -95,7 +95,7 @@ h1
   padding:1%;
   width: 40%;
   text-align: center;
-  margin: 0 auto;
+  margin: 10vw auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
