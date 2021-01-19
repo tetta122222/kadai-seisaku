@@ -206,14 +206,6 @@ $("#search-input").on('click', function(){
     $('.navi').addClass('hide2');
   }); 
 
-  
-  $("#google_translate_element").on('click', function(){
-    console.log("aaaaaa");
-    $("iframe").addClass('width');
-    $('td').addClass('none');
-});
-
-
 $("iframe").on("load",function(){
     console.log("こんにちは");
    });
