@@ -95,7 +95,7 @@ h1
   padding:1%;
   width: 40%;
   text-align: center;
-  margin: 10vw auto;
+  margin: 4vw auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -301,6 +301,9 @@ h1
 
 @media screen  and  (max-width:768px) {
 
+.search{
+  margin: 10vw auto;
+}
 body{
   display: flex;
   justify-content: center;
