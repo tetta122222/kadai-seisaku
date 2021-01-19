@@ -134,8 +134,9 @@
   
     .button_animation1:active {
       outline: none;
-      transform: translate(0em, 0.75em);
+     transform: translate(0em, 0.75em);
   }
+
   
   .button_animation1:active::before {
   transform: translate3d(0, 0, -1em);
