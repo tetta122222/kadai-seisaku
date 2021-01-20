@@ -59,6 +59,7 @@ h1
 
 .cate,.cate2 {
   display: none;
+  color: #ccc;
 }
 .cate + .check:before, .cate2 + .check2:before  {
   content: "\f3a6";

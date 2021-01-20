@@ -1,4 +1,5 @@
-$(".search").on('click', function(){
-    sessionStorage.setItem('value',$(".radio").val());
-    sessionStorage.setItem('value1',$(".radio").data('value'));
+$(".radio").on('click', function(){
+    
+    sessionStorage.setItem('value',$(this).val());
+    sessionStorage.setItem('value1',$(this).data('value'));
 })
