@@ -26,6 +26,7 @@ $('.sort2').on('click', function(){
   //clicknum = 1;
   $('.hotel_box').remove();
   small_cd = $(this).attr('data-value');
+  sessionStorage.setItem('area',small_cd);
   console.log(small_cd);
   $('.cate').addClass('display_none');
   $('.page1').addClass('display_none');
@@ -83,7 +84,7 @@ function  getHotels(pageValue){
       /*料金とリンクボタンの表示*/
       contents +=
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li></ul>'+
-      '<div class="hotel_child"><p>最安料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
+      '<div class="hotel_child"><p>料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
       '<a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></div>';
       $('#list').append(contents);      
       
@@ -216,7 +217,7 @@ $(window).on('scroll',function(){
 
 $("#search-input").on('click', function(){
   $('.navi').addClass('hide2');
-  
+  sessionStorage.setItem('area',small_cd);
 }); 
 
 

@@ -66,7 +66,7 @@ function  getfood() {
             '<li>' + array[i].name_kana + '</li>' + 
             '<li>' + array[i].address + '</li>' + 
             '<li>' + array[i].tel + '</li>'+'</ul>' + 
-            '<div class = "hotel_child">' + '<p>予算￥'+array[i].budget +'～</p><a href ="' + array[i].url + '"> 詳細情報へ</a></div>'+
+            '<div class = "hotel_child">' + '<p>料金￥'+array[i].budget +'～</p><a href ="' + array[i].url + '"> 詳細情報へ</a></div>'+
             '</div></div>';
             htmlList.innerHTML += textcontent;
 

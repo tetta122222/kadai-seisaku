@@ -4,13 +4,13 @@
 $('#search-buttom').on('click', function(){
   keyword = $("#search-input").val();
    console.log(keyword);
-  
-  
   $('.page1').remove();
   $('.hotel_box').remove();
   let mid_cd = 'kagoshima';
+  let small_cd = sessionStorage.getItem('area');
+  console.log(small_cd);
   $.ajax({
-    url: 'https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20170426?format=json&applicationId=1020173082905393111&keyword=' + keyword + '&middleClassCode=' + mid_cd,
+    url: 'https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20170426?format=json&applicationId=1020173082905393111&smallClassCode=' + small_cd + '&middleClassCode=' + mid_cd +'&keyword='+ keyword,
     type: 'post',
     dataType:'jsonp'
   })
