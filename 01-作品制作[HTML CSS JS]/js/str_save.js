@@ -70,7 +70,7 @@ function  getHotels(pageValue){
       let num2  = 5 - num1;
       /*店舗名～住所の表示*/
       contents +=
-      '<div class="hotel_box"><img src="' + hotels[i].hotel[0].hotelBasicInfo. hotelImageUrl + '">'+
+      '<div class="hotel_box shadow1"><img src="' + hotels[i].hotel[0].hotelBasicInfo. hotelImageUrl + '">'+
       '<ul><li>' + hotels[i].hotel[0].hotelBasicInfo.hotelName + '</li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.hotelKanaName + '</li>'+
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.address2 + '</li>';
@@ -84,7 +84,7 @@ function  getHotels(pageValue){
       /*料金とリンクボタンの表示*/
       contents +=
       '<li>' + hotels[i].hotel[0].hotelBasicInfo.telephoneNo + '</li></ul>'+
-      '<div class="hotel_child"><p>料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
+      '<div class="hotel_child "><p>料金￥' + hotels[i].hotel[0].hotelBasicInfo.hotelMinCharge + '～</p>'+
       '<a href ="' + hotels[i].hotel[0].hotelBasicInfo.hotelInformationUrl + '"> 詳細情報へ</a></div></div>';
       $('#list').append(contents);      
       
