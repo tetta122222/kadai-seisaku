@@ -1,0 +1,1 @@
+.a{width:50%;position:relative}.b{position:relative;display:flex}.norenn{position:absolute;z-index:100}.bt:active .box{animation:anim 1s forwards}.right_door{position:absolute;top:70px;left:212px}@keyframes anim{0%{transform:translateX(0px)}100%{transform:translate(-212px, -35px)}}
