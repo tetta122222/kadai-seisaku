@@ -274,7 +274,14 @@ form {
     margin: 0;
   }
   .search {
+    width: 100%;
     display: flex;
+  }
+  .search #search-input {
+    width: 80%;
+  }
+  .search #search-buttom {
+    width: 20%;
   }
   .navis div {
     width: 50%;
