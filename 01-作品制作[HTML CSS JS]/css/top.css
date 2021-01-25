@@ -1,5 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 1vw;
+}
+
+.logo {
+  width: 100%;
+}
+
 .a {
-  width: 50%;
+  padding: 1rem;
+  width: 55%;
   position: relative;
 }
 
@@ -8,12 +21,16 @@
   display: flex;
 }
 
+.right {
+  width: 40%;
+}
+
 .norenn {
   position: absolute;
   z-index: 100;
 }
 
-.bt:active .box {
+.box {
   animation: anim 1s forwards;
 }
 
@@ -29,5 +46,11 @@
   }
   100% {
     transform: translate(-212px, -35px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
   }
 }

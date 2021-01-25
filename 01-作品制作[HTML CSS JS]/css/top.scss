@@ -1,36 +1,56 @@
-.a{
-    width: 50%;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 1vw;
+  }
+  
+  .logo {
+    width: 100%;
+  }
+  
+  .a {
+    padding: 1rem;
+    width: 55%;
     position: relative;
-}
-
-.b{
+  }
+  
+  .b {
     position: relative;
     display: flex;
-}
-
-
-.norenn{
+  }
+  
+  .right{
+   width: 40%;
+  }
+  
+  .norenn {
     position: absolute;
     z-index: 100;
-}
-.bt:active{
-   .box{
-    animation: anim 1s forwards;
-   }
   }
-
-  .right_door{
-      position: absolute;
-      top: 70px;
-      left: 212px;
+  
+  .box {
+    animation: anim 1s forwards;
+  }
+  
+  .right_door {
+    position: absolute;
+    top: 70px;
+    left: 212px;
   }
   
   @keyframes anim {
     0% {
-    transform: translateX(0px);
+      transform: translateX(0px);
     }
-  
     100% {
-    transform: translate(-212px ,-35px);
+      transform: translate(-212px, -35px);
     }
   }
+  
+  @media screen and (max-width: 768px){
+      body{
+          display: block;
+      }
+  }  
