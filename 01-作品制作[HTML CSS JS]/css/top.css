@@ -90,8 +90,10 @@ p {
 .bt {
   padding: 1vh;
   margin: 0 auto;
-  width: 20%;
+  width: auto;
   margin: 0 40%;
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,8 +113,8 @@ p {
     position: relative;
   }
   .b img {
-    height: 40vh;
-    top: 16vh !important;
+    height: 35vh;
+    top: 14.0vh !important;
     left: 50% !important;
     right: 50% !important;
   }
@@ -133,7 +135,7 @@ p {
     height: 36vh !important;
   }
   .right_door {
-    padding-left: 10vh;
+    padding-left: 9vh;
   }
   p {
     line-height: unset;
