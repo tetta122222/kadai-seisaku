@@ -11,14 +11,38 @@ img {
   height: 40vh;
 }
 
+.aaaa {
+  height: 50vh;
+}
+
+.right_door {
+  height: 50vh;
+}
+
+.norenn {
+  height: 45vh;
+}
+
 .logo {
   width: 100%;
+  object-fit: contain;
+}
+
+p {
+  font-size: 3vh;
+  margin: 0;
+  margin-bottom: 4vh;
+  line-height: 5vh;
 }
 
 .a {
   padding: 1rem;
   width: 55%;
   position: relative;
+}
+
+.aaaa {
+  position: absolute;
 }
 
 .b {
@@ -31,12 +55,17 @@ img {
 }
 
 .right {
+  height: 100%;
   width: 40%;
 }
 
 .norenn {
   position: absolute;
   z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .box {
@@ -54,12 +83,22 @@ img {
     transform: translateX(0px);
   }
   100% {
-    transform: translate(-212px, -35px);
+    transform: translate(-50%, -10%);
   }
 }
 
-@media screen and (max-width: 700px) {
+.bt {
+  padding: 1vh;
+  margin: 0 auto;
+  width: 20%;
+  margin: 0 40%;
+}
+
+@media screen and (max-width: 1024px) {
   body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: block;
     font-size: 2vh;
   }
@@ -73,11 +112,12 @@ img {
   }
   .b img {
     height: 40vh;
-    top: 16vh;
-    left: 50%;
-    right: 50%;
+    top: 16vh !important;
+    left: 50% !important;
+    right: 50% !important;
   }
   .b .aaaa {
+    position: unset;
     padding-left: 5vh;
   }
   .a {
@@ -85,12 +125,18 @@ img {
     padding: 0;
   }
   .a .norenn {
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    height: 36vh;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    margin: 0 auto !important;
+    height: 36vh !important;
   }
   .right_door {
     padding-left: 10vh;
+  }
+  p {
+    line-height: unset;
+    font-size: 2vh;
   }
 }
