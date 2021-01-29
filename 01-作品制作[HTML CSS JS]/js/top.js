@@ -11,7 +11,7 @@ var windowWidth = $(window).width();
 $(".bt").on('click', function(){
     $(".right_door").addClass("box");
     setTimeout(function(){ 
-        $(".right_door").removeClass("box");
         window.location.href = "select.html";    
+        $(".right_door").removeClass("box");
       }, 2000);
 });
