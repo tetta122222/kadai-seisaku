@@ -97,9 +97,8 @@ function  getHotels(pageValue){
   });
   
 };
-
-getHotels();
-setTimeout("aaaaa()", 2000);
+setTimeout("getHotels()", 2000);
+setTimeout("aaaaa()", 4000);
 
 //-----------------------------------------
 //ジャンルボタンクリック
