@@ -12,6 +12,6 @@ $(".bt").on('click', function(){
     $(".right_door").addClass("box");
     setTimeout(function(){ 
         window.location.href = "select.html";    
-        $(".right_door").removeClass("box");
       }, 2000);
+ $(".right_door").removeClass("box");
 });
