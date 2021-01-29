@@ -9,8 +9,9 @@
 //$(".right_door").css('top',$(window).height()/5);
 var windowWidth = $(window).width();
 $(".bt").on('click', function(){
- if(num === 1){
-      $(".right_door").addClass("box");
+  num = 1;
+  if(num === 1){
+    $(".right_door").addClass("box");
     setTimeout(function(){
         num = 0; 
         window.location.href = "select.html";    
