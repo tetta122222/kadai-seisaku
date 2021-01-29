@@ -5,12 +5,14 @@
  $(".aaaa").css('left',$(window).height()/25);
  $(".right_door").css('top',$(window).height()/2.7);
  $(".aaaa").css('top',$(window).height()/3.2);  
- $(".right_door").removeClass("box");
+ 
+ var windowWidth = $(window).width();
 
-var windowWidth = $(window).width();
 $(".bt").on('click', function(){
     $(".right_door").addClass("box");
     setTimeout(function(){ 
         window.location.href = "select.html";    
       }, 2000);
 });
+
+$(".right_door").removeClass("box");
