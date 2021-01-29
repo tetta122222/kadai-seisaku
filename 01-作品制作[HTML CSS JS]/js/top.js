@@ -4,14 +4,16 @@
  $(".right_door").css('left',$(window).height()/3.5);
  $(".aaaa").css('left',$(window).height()/25);
  $(".right_door").css('top',$(window).height()/2.7);
- $(".aaaa").css('top',$(window).height()/3.2);
-
+ $(".aaaa").css('top',$(window).height()/3.2); 
+ let num = 0;
 //$(".right_door").css('top',$(window).height()/5);
 var windowWidth = $(window).width();
 $(".bt").on('click', function(){
-    $(".right_door").addClass("box");
-    setTimeout(function()  {
+ if(num === 1){
+      $(".right_door").addClass("box");
+    setTimeout(function(){
+        num = 0; 
         window.location.href = "select.html";    
-    }, 2000);
-        
+      }, 2000);
+ }
 });
