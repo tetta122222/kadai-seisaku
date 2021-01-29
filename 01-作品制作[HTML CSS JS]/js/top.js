@@ -12,8 +12,8 @@ $(".bt").on('click', function(){
   num = 1;
   if(num === 1){
     $(".right_door").addClass("box");
-    setTimeout(function(){
-        num = 0; 
+    num = 0;
+    setTimeout(function(){ 
         window.location.href = "select.html";    
       }, 2000);
  }
